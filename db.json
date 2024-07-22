@@ -1,0 +1,424 @@
+{
+  "hospitals": [
+    {
+      "id": 1,
+      "name": "Afyahospital",
+      "location": "New York",
+      "address": "123 Main St",
+      "emergencyContact": "+1234567890",
+      "helpdeskContact": "+0987654321",
+      "specialistDepartments": [
+        "Cardiology",
+        "Neurology"
+      ]
+    },
+    {
+      "id": "2dda",
+      "name": "Medveel Medical Centre",
+      "location": "Chuma Mbili",
+      "address": "Moi Avenue, Nairobi, Bihi Towers",
+      "emergencyContact": "0712164454",
+      "helpdeskContact": "0743 838 164",
+      "specialistDepartments": [
+        "Peditricians"
+      ]
+    },
+    {
+      "id": "9b26",
+      "name": "Bliss Hospital",
+      "location": "Eldoret",
+      "county": "Uasin Gishu",
+      "emergencyContact": "0710111111",
+      "helpdeskContact": "0710222222",
+      "specialistDepartments": [
+        "Cardiology"
+      ]
+    },
+    {
+      "id": "e046",
+      "name": "baringo hospital",
+      "location": "Baringo",
+      "county": "Baringo",
+      "emergencyContact": "0710111111",
+      "helpdeskContact": "0710222222",
+      "specialistDepartments": [
+        "Emergency Medicine"
+      ]
+    },
+    {
+      "id": "5244",
+      "name": "Bliss Hospital",
+      "location": "Bomet",
+      "county": "Bomet",
+      "emergencyContact": "0710111111",
+      "helpdeskContact": "0710222222",
+      "specialistDepartments": [
+        "Endocrinology"
+      ]
+    },
+    {
+      "id": "afee",
+      "name": "Mediheal",
+      "location": "Kiambu",
+      "county": "Kiambu",
+      "emergencyContact": "0710111111",
+      "helpdeskContact": "0710222222",
+      "specialistDepartments": [
+        "Nephrology"
+      ]
+    }
+  ],
+  "specialists": [
+    {
+      "id": 1,
+      "name": "Dr. Smith",
+      "contactDetails": {
+        "phoneNumber": "+1234567890",
+        "email": "drsmith@example.com"
+      },
+      "appointmentSchedules": [
+        "Monday 9AM",
+        "Wednesday 2PM"
+      ],
+      "licensingLevel": "Board Certified",
+      "clinics": [
+        "Afyahospital",
+        "AnotherHospital"
+      ]
+    },
+    {
+      "id": "9192",
+      "name": "Nickson Ali",
+      "contactDetails": {
+        "phoneNumber": "0726492249",
+        "email": "nickali@gmail.com"
+      },
+      "appointmentSchedules": [
+        "3AM Monday",
+        " 9AM Tuesday"
+      ],
+      "licensingLevel": "Board Certified",
+      "category": "Dermatology",
+      "clinics": [
+        "Bliss Medical"
+      ]
+    },
+    {
+      "id": "d3ba",
+      "name": "Wambua Njima",
+      "contactDetails": {
+        "phoneNumber": "0726492249",
+        "email": "wambuanjima@gmail.com"
+      },
+      "appointmentSchedules": [
+        "3AM Monday",
+        " 9AM Tuesday"
+      ],
+      "licensingLevel": "Board Certified",
+      "category": "Family Medicine",
+      "clinics": [
+        "Coptic Hospital"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Anesthesiology"
+    },
+    {
+      "id": 2,
+      "name": "Cardiology"
+    },
+    {
+      "id": 3,
+      "name": "Dermatology"
+    },
+    {
+      "id": 4,
+      "name": "Emergency Medicine"
+    },
+    {
+      "id": 5,
+      "name": "Endocrinology"
+    },
+    {
+      "id": 6,
+      "name": "Family Medicine"
+    },
+    {
+      "id": 7,
+      "name": "Gastroenterology"
+    },
+    {
+      "id": 8,
+      "name": "General Surgery"
+    },
+    {
+      "id": 9,
+      "name": "Geriatrics"
+    },
+    {
+      "id": 10,
+      "name": "Hematology"
+    },
+    {
+      "id": 11,
+      "name": "Infectious Disease"
+    },
+    {
+      "id": 12,
+      "name": "Internal Medicine"
+    },
+    {
+      "id": 13,
+      "name": "Nephrology"
+    },
+    {
+      "id": 14,
+      "name": "Neurology"
+    },
+    {
+      "id": 15,
+      "name": "Obstetrics & Gynecology"
+    },
+    {
+      "id": 16,
+      "name": "Oncology"
+    },
+    {
+      "id": 17,
+      "name": "Ophthalmology"
+    },
+    {
+      "id": 18,
+      "name": "Orthopedic Surgery"
+    },
+    {
+      "id": 19,
+      "name": "Otolaryngology (ENT)"
+    },
+    {
+      "id": 20,
+      "name": "Pathology"
+    },
+    {
+      "id": 21,
+      "name": "Pediatrics"
+    },
+    {
+      "id": 22,
+      "name": "Physical Medicine & Rehabilitation"
+    },
+    {
+      "id": 23,
+      "name": "Plastic Surgery"
+    },
+    {
+      "id": 24,
+      "name": "Pulmonary Medicine"
+    },
+    {
+      "id": 25,
+      "name": "Radiology"
+    },
+    {
+      "id": 26,
+      "name": "Rheumatology"
+    },
+    {
+      "id": 27,
+      "name": "Thoracic Surgery"
+    },
+    {
+      "id": 28,
+      "name": "Urology"
+    },
+    {
+      "id": 29,
+      "name": "Vascular Surgery"
+    }
+  ],
+  "counties": [
+    {
+      "id": 1,
+      "name": "Baringo"
+    },
+    {
+      "id": 2,
+      "name": "Bomet"
+    },
+    {
+      "id": 3,
+      "name": "Busia"
+    },
+    {
+      "id": 4,
+      "name": "Elgeyo-Marakwet"
+    },
+    {
+      "id": 5,
+      "name": "Embu"
+    },
+    {
+      "id": 6,
+      "name": "Garissa"
+    },
+    {
+      "id": 7,
+      "name": "Homa Bay"
+    },
+    {
+      "id": 8,
+      "name": "Isiolo"
+    },
+    {
+      "id": 9,
+      "name": "Kajiado"
+    },
+    {
+      "id": 10,
+      "name": "Kakamega"
+    },
+    {
+      "id": 11,
+      "name": "Kericho"
+    },
+    {
+      "id": 12,
+      "name": "Kiambu"
+    },
+    {
+      "id": 13,
+      "name": "Kilifi"
+    },
+    {
+      "id": 14,
+      "name": "Kirinyaga"
+    },
+    {
+      "id": 15,
+      "name": "Kisii"
+    },
+    {
+      "id": 16,
+      "name": "Kitui"
+    },
+    {
+      "id": 17,
+      "name": "Kwale"
+    },
+    {
+      "id": 18,
+      "name": "Laikipia"
+    },
+    {
+      "id": 19,
+      "name": "Lamu"
+    },
+    {
+      "id": 20,
+      "name": "Machakos"
+    },
+    {
+      "id": 21,
+      "name": "Makueni"
+    },
+    {
+      "id": 22,
+      "name": "Mandera"
+    },
+    {
+      "id": 23,
+      "name": "Meru"
+    },
+    {
+      "id": 24,
+      "name": "Migori"
+    },
+    {
+      "id": 25,
+      "name": "Mombasa"
+    },
+    {
+      "id": 26,
+      "name": "Muranga"
+    },
+    {
+      "id": 27,
+      "name": "Nairobi"
+    },
+    {
+      "id": 28,
+      "name": "Nakuru"
+    },
+    {
+      "id": 29,
+      "name": "Nandi"
+    },
+    {
+      "id": 30,
+      "name": "Narok"
+    },
+    {
+      "id": 31,
+      "name": "Nyamira"
+    },
+    {
+      "id": 32,
+      "name": "Nyandarua"
+    },
+    {
+      "id": 33,
+      "name": "Nyeri"
+    },
+    {
+      "id": 34,
+      "name": "Samburu"
+    },
+    {
+      "id": 35,
+      "name": "Samia"
+    },
+    {
+      "id": 36,
+      "name": "Siaya"
+    },
+    {
+      "id": 37,
+      "name": "Taita-Taveta"
+    },
+    {
+      "id": 38,
+      "name": "Tana River"
+    },
+    {
+      "id": 39,
+      "name": "Tharaka-Nithi"
+    },
+    {
+      "id": 40,
+      "name": "Trans Nzoia"
+    },
+    {
+      "id": 41,
+      "name": "Turkana"
+    },
+    {
+      "id": 42,
+      "name": "Uasin Gishu"
+    },
+    {
+      "id": 43,
+      "name": "Vihiga"
+    },
+    {
+      "id": 44,
+      "name": "Wajir"
+    },
+    {
+      "id": 45,
+      "name": "West Pokot"
+    }
+  ]
+}

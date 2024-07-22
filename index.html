@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afyapedia</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button id="home-button">Back To Home</button>
+            <h1>Afyapedia</h1>
+            <button id="adminLoginButton">Admin Login</button>
+        </div>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <div id="find-options-container" class="section" style="display:block;">
+            <div class="button-container">
+                <button id="hospital-button">Are you looking for a hospital?</button>
+                <button id="specialist-button">Are you looking for a specialist doctor?</button>
+            </div>
+        </div>
+
+        <!-- Hospital Search Section -->
+        <div id="hospital-section" class="section" style="display:none;">
+            <div class="sidebar">
+                <h2>Select Location</h2>
+                <ul id="location-list">
+                    <!-- Locations will be populated here -->
+                </ul>
+            </div>
+            <div class="content-area">
+                <div id="hospital-list">
+                    <!-- List of hospitals will be displayed here -->
+                </div>
+                <div id="hospital-details" style="display:none;">
+                    <!-- Details of a selected hospital will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Specialist Search Section -->
+        <div id="specialist-section" class="section" style="display:none;">
+            <div class="sidebar">
+                <h2>Select Category</h2>
+                <ul id="category-list">
+                    <!-- Specialist categories will be populated here -->
+                </ul>
+                <div id="location-input" style="display:none;">
+                    <h3>Enter Location</h3>
+                    <input type="text" id="specialist-location" placeholder="Enter location">
+                </div>
+            </div>
+            <div class="content-area">
+                <div id="specialist-list">
+                    <!-- List of specialists will be displayed here -->
+                </div>
+                <div id="specialist-details" style="display:none;">
+                    <!-- Details of a selected specialist will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Dashboard -->
+        <div id="adminDashboard" style="display:none;">
+            <div class="button-container">
+                <button id="add-hospital-button">Add Hospital</button>
+                <button id="add-specialist-button">Add Specialist</button>
+                <button id="list-hospitals-button">List All Hospitals</button>
+                <button id="list-specialists-button">List All Specialists</button>
+            </div>
+        </div>
+
+        <!-- Hospital Form -->
+        <form id="add-hospital-form" style="display: none;">
+            <label for="hospital-name">Hospital Name:</label>
+            <input type="text" id="hospital-name" name="name" required>
+            <br>
+            <label for="hospital-location">Location:</label>
+            <input type="text" id="hospital-location" name="location" required>
+            <br>
+            <label for="hospital-county">County:</label>
+            <select id="hospital-county"></select>
+            <br>
+            <label for="hospital-emergency-contact">Emergency Contact:</label>
+            <input type="tel" id="hospital-emergency-contact" name="emergencyContact" pattern="^\+?(\d[\d-. ]*){5,14}$" required>
+            <br>
+            <label for="hospital-helpdesk-contact">Helpdesk Contact:</label>
+            <input type="tel" id="hospital-helpdesk-contact" name="helpdeskContact" pattern="^\+?(\d[\d-. ]*){5,14}$" required>
+            <br>
+            <label for="hospital-specialist-departments">Select Specialties Departments:</label>
+            <select id="hospital-specialist-departments" multiple></select>
+            <br>
+            <input type="submit" value="Add Hospital">
+        </form>
+
+        <!-- Specialist Form -->
+        <form id="add-specialist-form" style="display: none;">
+            <label for="specialist-name">Specialist Name:</label>
+            <input type="text" id="specialist-name" name="name" required>
+            <br>
+            <label for="specialist-phone-number">Phone Number:</label>
+            <input type="tel" id="specialist-phone-number" name="contactDetails.phoneNumber" pattern="^\+?(\d[\d-. ]*){5,14}$" required>
+            <br>
+            <label for="specialist-email">Email:</label>
+            <input type="email" id="specialist-email" name="contactDetails.email" required>
+            <br>
+            <label for="specialist-schedule">Appointment Schedules:</label>
+            <input type="text" id="specialist-schedule" name="appointmentSchedules" required>
+            <br>
+            <label for="specialist-licensing-level">Licensing Level:</label>
+            <input type="text" id="specialist-licensing-level" name="licensingLevel" required>
+            <br>
+            <label for="specialist-category">Category:</label>
+            <select id="specialist-category"></select>
+            <br>
+            <label for="specialist-clinics">Clinics:</label>
+            <input type="text" id="specialist-clinics" name="clinics" required>
+            <br>
+            <input type="submit" value="Add Specialist">
+        </form>
+
+        <!-- List Views -->
+        <div id="list-hospitals" style="display: none;">
+            <h2>All Hospitals</h2>
+            <ul id="hospital-list"></ul>
+        </div>
+
+        <div id="list-specialists" style="display: none;">
+            <h2>All Specialists</h2>
+            <ul id="specialist-list"></ul>
+        </div>
+
+        <!-- Admin Login Modal -->
+        <div id="adminLoginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="loginForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br>
+                    <input type="submit" value="Log In">
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
